@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Room</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="moneyOff">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="money">
+        <item>11</item>
+        <item>22</item>
+        <item>33</item>
+        <item>44</item>
+    </string-array>
+</resources>

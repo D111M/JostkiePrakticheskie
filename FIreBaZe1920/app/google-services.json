@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "423860296389",
+    "project_id": "fibase1920",
+    "storage_bucket": "fibase1920.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423860296389:android:0ab694be81a8b3fc4aeeac",
+        "android_client_info": {
+          "package_name": "com.example.firebaze1920"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423860296389-ekgog2vose4ibr60vaodurvtqt1q0h87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu4CsiGoMDntz1W-X55_L-4-7q5AyyaaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423860296389-ekgog2vose4ibr60vaodurvtqt1q0h87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
