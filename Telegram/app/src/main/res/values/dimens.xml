@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="user_photo_width">65dp</dimen>
+    <dimen name="user_photo_height">65dp</dimen>
+    <dimen name="user_photo_border">2dp</dimen>
+    <dimen name="large_text_size">18sp</dimen>
+    <dimen name="small_size_text">14sp</dimen>
+</resources>

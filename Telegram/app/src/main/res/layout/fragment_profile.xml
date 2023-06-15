@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5D0E6"
+    tools:context=".fragments.SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/user_photo_width"
+            android:layout_height="@dimen/user_photo_height"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_marginStart="16dp"
+            app:civ_circle_background_color="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/default_fullname"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/profile_image"
+            app:layout_constraintTop_toTopOf="@id/profile_image"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/default_status"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_size_text"
+            android:layout_marginStart="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/profile_username"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_change_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        android:background="@drawable/ripple_effect"
+
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@+id/profile_header"
+        style="@style/profile_buttons">
+        <TextView
+            android:id="@+id/phone_number"
+            app:layout_constraintTop_toTopOf="@+id/profile_change_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/default_number"
+            style="@style/profile_normal_text" />
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/phone_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/separator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_change_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        android:background="@drawable/ripple_effect"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@+id/profile_change_phone"
+        style="@style/profile_buttons">
+        <TextView
+            android:id="@+id/login"
+            app:layout_constraintTop_toTopOf="@+id/profile_change_login"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/default_login"
+            style="@style/profile_normal_text" />
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/separator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_change_bio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        android:background="@drawable/ripple_effect"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@+id/profile_change_login"
+        style="@style/profile_buttons">
+        <TextView
+            android:id="@+id/biography"
+            app:layout_constraintTop_toTopOf="@+id/profile_change_bio"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Информация о себе"
+            style="@style/profile_normal_text" />
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/biography"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/separator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_change_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        android:layout_marginStart="16dp"
+        app:civ_border_color="@color/md_grey_500"
+        android:layout_marginEnd="18dp"
+        app:civ_circle_background_color="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_header"
+        app:layout_constraintTop_toTopOf="@+id/profile_header"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "408875563265",
+    "firebase_url": "https://dimproj-636d3-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "dimproj-636d3",
+    "storage_bucket": "dimproj-636d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408875563265:android:95b5863be297523ec44300",
+        "android_client_info": {
+          "package_name": "com.example.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408875563265-0tts6apqts1u1pvder9gi847f8devcpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBglpsbfYZ4ClKwWhlxCfIoyNDpFB21fwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408875563265-0tts6apqts1u1pvder9gi847f8devcpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
